@@ -1,0 +1,62 @@
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 150px;
+}
+
+.top-right-contact {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand {
+  height: 100%;
+  width: 100%; 
+}
+
+.contact {
+  position: initial;
+  padding-top: 10px;
+  height: 100%;
+  width: 100%; 
+}
+
+.home {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.mat-menu {
+  position: absolute;
+  top: 150px;
+  right: 16px;
+  max-width: 400px;
+}
+
+.mat-menu-contact {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  max-width: 400px;
+}
+
+.mat-feedback {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  max-width: 400px;
+}
+
+.cover-image {
+  background-image: url(/assets/images/book.jpg);
+  background-size: cover;
+}

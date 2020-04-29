@@ -1,0 +1,62 @@
+<div>
+  <img class="home" src="assets/images/home.png" routerLink="/">
+  <img class="contact" src="assets/images/contact1.png">
+  <h1 class="centered">Library Management System</h1>
+  <button class="top-right" mat-raised-button color="primary" routerLink="/book-shelf">Book Shelf</button> &nbsp;
+  <button class="top-right-contact" mat-raised-button color="accent" routerLink="/contact">Contact Us</button>
+  <br>
+  <mat-card class="mat-menu-contact">
+    <mat-card-header>
+      <mat-card-title>Contact Details</mat-card-title>
+      <mat-card-subtitle> Please refer library website</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+
+      <p>Working Hours: Monday to Friday </p>
+      <p>Issue-Return: 08:30 AM - 08:30 PM </p>
+      <p>Enquiries: 08:00 AM - 11:30 PM</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="mat-feedback">
+    <mat-card-content>
+      <div>
+        <table>
+          <tr>
+            <td>Name:</td>
+            <td><input type="text" [(ngModel)]="name"></td>
+            <br>
+          </tr>
+          <tr>
+            <td>Mobile number:</td>
+            <td><input type="text" maxlength="10" [(ngModel)]="mobile" required></td>
+            <br>
+          </tr>
+          <tr>
+            <td>Mail Id:</td>
+            <td><input type="text" maxlength="10" [(ngModel)]="mail"></td>
+            <br>
+          </tr>
+          <tr>
+            <td>Rating:</td>
+            <td>
+              <select>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Bad">Bad</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Remarks:</td>
+            <td><textarea rows="3" cols="22"></textarea>
+          </tr>
+          <tr>
+        </table>
+      </div>
+      <br>
+      <div align="center">
+        <button mat-raised-button color="warn">Submit Feedback</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
